@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicativo apcpivot</title>
+  <link rel="shortcut icon" href="imagens/feagri.ico" type="image/x-icon">
+  <style>
+    /* === ESTILO GERAL === */
+    body {
+      background: linear-gradient(180deg, #e3e8ec, #ffffff);
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      color: #222;
+    }
+
+    /* === CABEÇALHO === */
+    header {
+      background-color: #285069;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    /* === BOTÃO DE DOWNLOAD === */
+    nav a {
+      background-color: #4681FF;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #376AD8;
+    }
+
+    nav img {
+      height: 22px;
+    }
+
+    /* === CONTEÚDO PRINCIPAL === */
+    main {
+      background-color: white;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    h2 {
+      color: #285069;
+      font-size: 1.6em;
+      margin-bottom: 20px;
+    }
+
+    /* === VÍDEO === */
+    .video-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .video-container video {
+      width: 70%;
+      max-width: 720px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* === RODAPÉ === */
+    footer {
+      background-color: #285069;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="imagens/LHI-novo-Photoroom.png" alt="Logo do Laboratório de Hidráulica e Irrigação">
+    <nav>
+      <a href="apcpivot.xlsm" download="apcpivot.xlsm">
+        <img src="imagens/excel.png" alt="Ícone do Excel">
+        Baixar aplicativo
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Tutorial de como utilizar o aplicativo</h2>
+    <div class="video-container">
+      <video src="tutorial_aplicativo.mp4" controls></video>
+    </div>
+  </main>
+
+  <footer>
+    <p>Faculdade de Engenharia Agrícola – FEAGRI, Av. Cândido Rondon, 501 - Barão Geraldo 13083-875 - Campinas/SP. © 2025. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
